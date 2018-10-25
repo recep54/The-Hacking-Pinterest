@@ -1,3 +1,0 @@
-class Commentary < ApplicationRecord
-  
-end

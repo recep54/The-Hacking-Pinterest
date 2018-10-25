@@ -1,24 +1,26 @@
-# README
+The Hacking Pinterest
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ce projet contient une base de données avec des users, des comments et des pins. Les utilisateurs peuvent créer des "pins", chaque pin contient une URL d'une image sur le net. Les utilisateurs peuvent commenter les pins, mais ne peuvent pas commenter les commentaires.
 
-Things you may want to cover:
+Pour lancer ce magnifique projet vous devez d'abord faire :
 
-* Ruby version
+    bundle install
 
-* System dependencies
+ensuite:
 
-* Configuration
+    rails db:migrate
 
-* Database creation
+Puis :
 
-* Database initialization
+    rails db:seed
 
-* How to run the test suite
+Enfin pour pourrez lancer la console et voir les commentaires, pins ou utilisateurs.
 
-* Services (job queues, cache servers, search engines, etc.)
+Il y a 3 tables, comments, pins et users.
 
-* Deployment instructions
+Pour les display, vous pouvez taper dans la console (rails c):
 
-* ...
+    User.all
+    Pin.all
+    Link.all
+
